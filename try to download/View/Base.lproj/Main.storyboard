@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="try_to_download" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter website URL" textAlignment="natural" minimumFontSize="18" background="scribble.variable" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="geS-Nx-UhD">
+                                <rect key="frame" x="41" y="431" width="332" height="34"/>
+                                <color key="backgroundColor" systemColor="systemGray4Color"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ju0-SV-pEU">
+                                <rect key="frame" x="140.5" y="541" width="133" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="LWj-nA-oAt"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Download">
+                                    <backgroundConfiguration key="background">
+                                        <color key="backgroundColor" red="0.75898846480000004" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </backgroundConfiguration>
+                                    <fontDescription key="titleFontDescription" style="UICTFontTextStyleTitle1"/>
+                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="downloadPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zTX-gW-MCX"/>
+                                </connections>
+                            </button>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="NYW-A5-j1q">
+                                <rect key="frame" x="71" y="608" width="272" height="4"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="272" id="wnh-yQ-fp9"/>
+                                </constraints>
+                            </progressView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemTealColor"/>
+                        <color key="tintColor" red="0.68118192710000003" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="geS-Nx-UhD" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="7eo-1g-6V1"/>
+                            <constraint firstItem="NYW-A5-j1q" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="89y-TL-Q13"/>
+                            <constraint firstItem="geS-Nx-UhD" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="41" id="CIJ-cH-7P6"/>
+                            <constraint firstItem="Ju0-SV-pEU" firstAttribute="top" secondItem="geS-Nx-UhD" secondAttribute="bottom" constant="76" id="DqO-QE-nTD"/>
+                            <constraint firstItem="NYW-A5-j1q" firstAttribute="top" secondItem="Ju0-SV-pEU" secondAttribute="bottom" constant="23" id="OKu-GF-AYq"/>
+                            <constraint firstItem="Ju0-SV-pEU" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="jlV-Yy-ldS"/>
+                            <constraint firstItem="geS-Nx-UhD" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="lli-12-E3B"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="downloadLabel" destination="Ju0-SV-pEU" id="Tei-mb-S7A"/>
+                        <outlet property="progressView" destination="NYW-A5-j1q" id="Wlv-K2-OKy"/>
+                        <outlet property="textField" destination="geS-Nx-UhD" id="Z1u-uB-zmO"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="47.826086956521742" y="41.517857142857139"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="scribble.variable" catalog="system" width="128" height="118"/>
+        <systemColor name="systemGray4Color">
+            <color red="0.81960784313725488" green="0.81960784313725488" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemTealColor">
+            <color red="0.18823529411764706" green="0.69019607843137254" blue="0.7803921568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

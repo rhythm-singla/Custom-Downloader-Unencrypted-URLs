@@ -16,6 +16,7 @@
 		552A005E27AE89A00095A9D3 /* try_to_downloadTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 552A005D27AE89A00095A9D3 /* try_to_downloadTests.swift */; };
 		552A006827AE89A00095A9D3 /* try_to_downloadUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 552A006727AE89A00095A9D3 /* try_to_downloadUITests.swift */; };
 		552A006A27AE89A00095A9D3 /* try_to_downloadUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 552A006927AE89A00095A9D3 /* try_to_downloadUITestsLaunchTests.swift */; };
+		552A007A27AE8B0E0095A9D3 /* DownloadManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 552A007927AE8B0E0095A9D3 /* DownloadManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		552A004327AE899E0095A9D3 /* try to download.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "try to download.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		552A004327AE899E0095A9D3 /* custom downloader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "custom downloader.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		552A004627AE899E0095A9D3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		552A004827AE899E0095A9D3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		552A004A27AE899E0095A9D3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -44,11 +45,12 @@
 		552A004F27AE89A00095A9D3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		552A005227AE89A00095A9D3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		552A005427AE89A00095A9D3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		552A005927AE89A00095A9D3 /* try to downloadTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "try to downloadTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		552A005927AE89A00095A9D3 /* custom downloaderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "custom downloaderTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		552A005D27AE89A00095A9D3 /* try_to_downloadTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = try_to_downloadTests.swift; sourceTree = "<group>"; };
-		552A006327AE89A00095A9D3 /* try to downloadUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "try to downloadUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		552A006327AE89A00095A9D3 /* custom downloaderUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "custom downloaderUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		552A006727AE89A00095A9D3 /* try_to_downloadUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = try_to_downloadUITests.swift; sourceTree = "<group>"; };
 		552A006927AE89A00095A9D3 /* try_to_downloadUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = try_to_downloadUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		552A007927AE8B0E0095A9D3 /* DownloadManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,9 +91,9 @@
 		552A004427AE899E0095A9D3 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				552A004327AE899E0095A9D3 /* try to download.app */,
-				552A005927AE89A00095A9D3 /* try to downloadTests.xctest */,
-				552A006327AE89A00095A9D3 /* try to downloadUITests.xctest */,
+				552A004327AE899E0095A9D3 /* custom downloader.app */,
+				552A005927AE89A00095A9D3 /* custom downloaderTests.xctest */,
+				552A006327AE89A00095A9D3 /* custom downloaderUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -101,8 +103,9 @@
 			children = (
 				552A004627AE899E0095A9D3 /* AppDelegate.swift */,
 				552A004827AE899E0095A9D3 /* SceneDelegate.swift */,
-				552A004A27AE899E0095A9D3 /* ViewController.swift */,
-				552A004C27AE899E0095A9D3 /* Main.storyboard */,
+				552A007827AE8AF00095A9D3 /* Model */,
+				552A007727AE8AE90095A9D3 /* View */,
+				552A007627AE8ACD0095A9D3 /* Controller */,
 				552A004F27AE89A00095A9D3 /* Assets.xcassets */,
 				552A005127AE89A00095A9D3 /* LaunchScreen.storyboard */,
 				552A005427AE89A00095A9D3 /* Info.plist */,
@@ -127,12 +130,36 @@
 			path = "try to downloadUITests";
 			sourceTree = "<group>";
 		};
+		552A007627AE8ACD0095A9D3 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				552A004A27AE899E0095A9D3 /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		552A007727AE8AE90095A9D3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				552A004C27AE899E0095A9D3 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		552A007827AE8AF00095A9D3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				552A007927AE8B0E0095A9D3 /* DownloadManager.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		552A004227AE899E0095A9D3 /* try to download */ = {
+		552A004227AE899E0095A9D3 /* custom downloader */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 552A006D27AE89A00095A9D3 /* Build configuration list for PBXNativeTarget "try to download" */;
+			buildConfigurationList = 552A006D27AE89A00095A9D3 /* Build configuration list for PBXNativeTarget "custom downloader" */;
 			buildPhases = (
 				552A003F27AE899E0095A9D3 /* Sources */,
 				552A004027AE899E0095A9D3 /* Frameworks */,
@@ -142,14 +169,14 @@
 			);
 			dependencies = (
 			);
-			name = "try to download";
+			name = "custom downloader";
 			productName = "try to download";
-			productReference = 552A004327AE899E0095A9D3 /* try to download.app */;
+			productReference = 552A004327AE899E0095A9D3 /* custom downloader.app */;
 			productType = "com.apple.product-type.application";
 		};
-		552A005827AE89A00095A9D3 /* try to downloadTests */ = {
+		552A005827AE89A00095A9D3 /* custom downloaderTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 552A007027AE89A00095A9D3 /* Build configuration list for PBXNativeTarget "try to downloadTests" */;
+			buildConfigurationList = 552A007027AE89A00095A9D3 /* Build configuration list for PBXNativeTarget "custom downloaderTests" */;
 			buildPhases = (
 				552A005527AE89A00095A9D3 /* Sources */,
 				552A005627AE89A00095A9D3 /* Frameworks */,
@@ -160,14 +187,14 @@
 			dependencies = (
 				552A005B27AE89A00095A9D3 /* PBXTargetDependency */,
 			);
-			name = "try to downloadTests";
+			name = "custom downloaderTests";
 			productName = "try to downloadTests";
-			productReference = 552A005927AE89A00095A9D3 /* try to downloadTests.xctest */;
+			productReference = 552A005927AE89A00095A9D3 /* custom downloaderTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		552A006227AE89A00095A9D3 /* try to downloadUITests */ = {
+		552A006227AE89A00095A9D3 /* custom downloaderUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 552A007327AE89A00095A9D3 /* Build configuration list for PBXNativeTarget "try to downloadUITests" */;
+			buildConfigurationList = 552A007327AE89A00095A9D3 /* Build configuration list for PBXNativeTarget "custom downloaderUITests" */;
 			buildPhases = (
 				552A005F27AE89A00095A9D3 /* Sources */,
 				552A006027AE89A00095A9D3 /* Frameworks */,
@@ -178,9 +205,9 @@
 			dependencies = (
 				552A006527AE89A00095A9D3 /* PBXTargetDependency */,
 			);
-			name = "try to downloadUITests";
+			name = "custom downloaderUITests";
 			productName = "try to downloadUITests";
-			productReference = 552A006327AE89A00095A9D3 /* try to downloadUITests.xctest */;
+			productReference = 552A006327AE89A00095A9D3 /* custom downloaderUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -206,7 +233,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 552A003E27AE899E0095A9D3 /* Build configuration list for PBXProject "try to download" */;
+			buildConfigurationList = 552A003E27AE899E0095A9D3 /* Build configuration list for PBXProject "custom downloader" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -219,9 +246,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				552A004227AE899E0095A9D3 /* try to download */,
-				552A005827AE89A00095A9D3 /* try to downloadTests */,
-				552A006227AE89A00095A9D3 /* try to downloadUITests */,
+				552A004227AE899E0095A9D3 /* custom downloader */,
+				552A005827AE89A00095A9D3 /* custom downloaderTests */,
+				552A006227AE89A00095A9D3 /* custom downloaderUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -261,6 +288,7 @@
 				552A004B27AE899E0095A9D3 /* ViewController.swift in Sources */,
 				552A004727AE899E0095A9D3 /* AppDelegate.swift in Sources */,
 				552A004927AE899E0095A9D3 /* SceneDelegate.swift in Sources */,
+				552A007A27AE8B0E0095A9D3 /* DownloadManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -286,12 +314,12 @@
 /* Begin PBXTargetDependency section */
 		552A005B27AE89A00095A9D3 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 552A004227AE899E0095A9D3 /* try to download */;
+			target = 552A004227AE899E0095A9D3 /* custom downloader */;
 			targetProxy = 552A005A27AE89A00095A9D3 /* PBXContainerItemProxy */;
 		};
 		552A006527AE89A00095A9D3 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 552A004227AE899E0095A9D3 /* try to download */;
+			target = 552A004227AE899E0095A9D3 /* custom downloader */;
 			targetProxy = 552A006427AE89A00095A9D3 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -442,6 +470,7 @@
 				DEVELOPMENT_TEAM = CRGJQ7K469;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "try to download/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "copy try to download";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -470,6 +499,7 @@
 				DEVELOPMENT_TEAM = CRGJQ7K469;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "try to download/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "copy try to download";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -504,7 +534,7 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/try to download.app/try to download";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/custom downloader.app/custom downloader";
 			};
 			name = Debug;
 		};
@@ -524,7 +554,7 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/try to download.app/try to download";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/custom downloader.app/custom downloader";
 			};
 			name = Release;
 		};
@@ -567,7 +597,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		552A003E27AE899E0095A9D3 /* Build configuration list for PBXProject "try to download" */ = {
+		552A003E27AE899E0095A9D3 /* Build configuration list for PBXProject "custom downloader" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				552A006B27AE89A00095A9D3 /* Debug */,
@@ -576,7 +606,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		552A006D27AE89A00095A9D3 /* Build configuration list for PBXNativeTarget "try to download" */ = {
+		552A006D27AE89A00095A9D3 /* Build configuration list for PBXNativeTarget "custom downloader" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				552A006E27AE89A00095A9D3 /* Debug */,
@@ -585,7 +615,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		552A007027AE89A00095A9D3 /* Build configuration list for PBXNativeTarget "try to downloadTests" */ = {
+		552A007027AE89A00095A9D3 /* Build configuration list for PBXNativeTarget "custom downloaderTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				552A007127AE89A00095A9D3 /* Debug */,
@@ -594,7 +624,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		552A007327AE89A00095A9D3 /* Build configuration list for PBXNativeTarget "try to downloadUITests" */ = {
+		552A007327AE89A00095A9D3 /* Build configuration list for PBXNativeTarget "custom downloaderUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				552A007427AE89A00095A9D3 /* Debug */,
