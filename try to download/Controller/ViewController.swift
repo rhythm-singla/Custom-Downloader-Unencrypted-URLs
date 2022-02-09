@@ -14,7 +14,6 @@ class ViewController: UIViewController, DownloadManagerDelegate, UIDocumentInter
     @IBOutlet weak var textField: UITextField!
     @IBOutlet weak var progressView: UIProgressView!
     
-    
 //    var session: URLSession!
    var downloadManager = DownloadManager()
     
