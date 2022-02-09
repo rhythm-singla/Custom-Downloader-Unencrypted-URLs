@@ -17,6 +17,7 @@ class ViewController: UIViewController, DownloadManagerDelegate, UIDocumentInter
 //    var session: URLSession!
    var downloadManager = DownloadManager()
     
+//  ViewDidLoad Method loads first
     override func viewDidLoad() {
         super.viewDidLoad()
 //        let configuration = URLSessionConfiguration.background(withIdentifier:
